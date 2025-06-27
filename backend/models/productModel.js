@@ -28,6 +28,8 @@ const productSchema = mongoose.Schema(
     images: [{ type: String, required: true, trim: true }],
     rating: { type: Number, default: 0, min: 0, max: 5 },
     discount: { type: Number, default: 0 },
+    category: { type: String, enum: ["sneakers", "boots", "sandals", "formal", "casual", "sports"], required: true },
+    gender: { type: String, enum: ["male", "female", "unisex"], required: true },
     numReviews: { type: Number, default: 0 },
   },
   {
