@@ -1,1 +1,1 @@
-salam ilk backend
+salam ilk backend və frontend project
