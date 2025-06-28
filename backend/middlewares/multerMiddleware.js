@@ -19,7 +19,8 @@ const upload = multer({
       file.mimetype === "image/jpg" ||
       file.mimetype === "image/png" ||
       file.mimetype === "image/gif" ||
-      file.mimetype === "image/webp"
+      file.mimetype === "image/webp" ||
+      file.mimetype === "image/avif"
     )
       cb(null, true);
     else {
