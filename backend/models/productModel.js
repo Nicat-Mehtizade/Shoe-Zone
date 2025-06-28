@@ -4,6 +4,7 @@ const productSchema = mongoose.Schema(
   {
     title: { type: String, required: true, trim: true },
     vendor: { type: String, required: true, trim: true },
+    vendorId: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
     description: { type: String, required: true, trim: true },
     price: { type: Number, required: true },
     color: [
@@ -23,6 +24,7 @@ const productSchema = mongoose.Schema(
       },
     ],
     stock: { type: Number, default: 0 },
+    sold: { type: Number, default: 0 },
     availability: { type: Boolean, default: false },
     bannerImage: { type: String, required: true, trim: true },
     images: [{ type: String, required: true, trim: true }],
