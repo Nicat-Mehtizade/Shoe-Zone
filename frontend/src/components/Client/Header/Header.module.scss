@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  padding: 15px 0px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -30,13 +30,17 @@
     align-items: center;
     margin-right: 10px;
     gap: 5px;
+    transition: 0.3s;
 
     p {
       font-size: 15px;
     }
   }
 }
-
+.phone:hover,
+.email:hover {
+  color: var(--color-purple-800);
+}
 .right {
   display: flex;
   align-items: center;
@@ -52,5 +56,17 @@
     display: flex;
     justify-content: space-between;
     font-size: 14px;
+    transition: 0.3s;
+    align-items: center;
+  }
+  .link:hover {
+    color: var(--color-purple-800);
+  }
+}
+
+@media screen and (max-width:580px){
+  .header{
+    flex-direction: column;
+    gap: 15px;
   }
 }

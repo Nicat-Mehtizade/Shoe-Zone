@@ -14,7 +14,7 @@ const Header = () => {
             </div>
             <div className={styles.email}>
               <Mail size={15} />
-              <p>zYm0A@example.com</p>
+              <p>info@somedomain.com</p>
             </div>
           </div>
         </div>
@@ -26,12 +26,9 @@ const Header = () => {
             <div className={styles.link}>
               <Link to="/">Track Your Order</Link>
             </div>
-            <div className={styles.link}>
-              <p>USD</p>
-            </div>
-            <div className={styles.link}>
-              <ChevronDown />
-            </div>
+            <select className="text-[14px] transition duration-300 hover:text-purple-800 cursor-pointer">
+              <option value="USD">USD</option>
+            </select>
           </div>
         </div>
       </div>
