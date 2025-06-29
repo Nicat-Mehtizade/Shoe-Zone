@@ -106,7 +106,7 @@ const NavbarClient = () => {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                     style={{
-                      top: `${navHeight + 35}px`,
+                      top: 130,
                       left: 69,
                       width: "91vw",
                     }}
@@ -178,9 +178,9 @@ const NavbarClient = () => {
             <button className="cursor-pointer transition duration-300 hover:text-purple-800">
               <FiSearch />
             </button>
-            <button className="cursor-pointer transition duration-300 hover:text-purple-800">
+            <NavLink to={"/login"} className="cursor-pointer transition duration-300 hover:text-purple-800">
               <FaUser />
-            </button>
+            </NavLink>
             <button className="relative z-[10] cursor-pointer transition duration-300 hover:text-purple-800 group">
               <div>
                 <FaBasketShopping />
