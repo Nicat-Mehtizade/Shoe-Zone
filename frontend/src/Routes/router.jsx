@@ -17,13 +17,12 @@ const Navigator = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+        <Route path="*" element={<NotFound />} />
         <Route path="/product">
           <Route path=":id" element={<DetailsPage />} />
         </Route>
       </Route>
       <Route path="/admin" element={<AdminLayout />} />
-
-      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };
