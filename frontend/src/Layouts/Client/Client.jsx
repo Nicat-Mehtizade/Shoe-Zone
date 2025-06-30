@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import NavbarClient from "../../components/Client/Navbar/Navbar";
 import Header from "../../components/Client/Header/Header";
+import Footer from "../../components/Client/Footer/Footer";
 
 const ClientLayout = () => {
   return (
@@ -8,7 +9,7 @@ const ClientLayout = () => {
       <Header />
       <NavbarClient />
       <Outlet />
-      <h2>I'm Footer</h2>
+      <Footer />
     </>
   );
 };

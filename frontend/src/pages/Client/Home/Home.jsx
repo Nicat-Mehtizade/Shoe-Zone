@@ -3,8 +3,10 @@ import Banner from "../../../components/Client/Banner/Banner";
 import NewArrivalsSection from "../../../components/Client/NewArrivalsSection";
 import ShoesSection from "../../../components/Client/ShoesSection";
 import { BASE_URL } from "../../../constant";
-import axios from "axios"
+import axios from "axios";
 import HurrySection from "../../../components/Client/HurrySection";
+import BestSellers from "../../../components/Client/BestSellers/BestSellers";
+import InfoSection from "../../../components/Client/InfoSection/InfoSection";
 const Home = () => {
   const [products, setProducts] = useState([]);
 
@@ -25,7 +27,9 @@ const Home = () => {
       <Banner />
       <ShoesSection />
       <NewArrivalsSection products={products} />
-      <HurrySection/>
+      <HurrySection />
+      <BestSellers />
+      <InfoSection />
     </>
   );
 };
