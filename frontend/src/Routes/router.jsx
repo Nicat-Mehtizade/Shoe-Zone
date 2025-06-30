@@ -1,9 +1,9 @@
 import { Router, Routes, Route } from "react-router-dom";
 import AdminLayout from "../Layouts/Admin/Admin";
 import ClientLayout from "../Layouts/Client/Client";
-import Home from "../components/Client/Home/Home";
+import Home from "../pages/Client/Home/Home";
 import NotFound from "../Error/NotFound/NotFound";
-
+import DetailsPage from "../pages/Client/Details"
 const Navigator = () => {
   return (
     <Routes>
@@ -11,6 +11,9 @@ const Navigator = () => {
         <Route index element={<Home />} />
         <Route path="/about" element={<h1> About </h1>} />
         <Route path="/contact" element={<h1> Contact </h1>} />
+        <Route path="/product">
+        <Route path=":id" element={<DetailsPage/>}/>
+        </Route>
       </Route>
       <Route path="/admin" element={<AdminLayout />} />
 

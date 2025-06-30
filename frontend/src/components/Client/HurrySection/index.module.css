@@ -1,0 +1,8 @@
+.background{
+    background-image: url(https://huge-shoes.myshopify.com/cdn/shop/files/about1.jpg?v=1613156884);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+}

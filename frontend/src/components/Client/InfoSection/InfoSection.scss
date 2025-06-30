@@ -1,0 +1,39 @@
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto;
+  padding: 50px 50px;
+  background-color: #f9f9f9;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.info-icon {
+  font-size: 42px;
+  margin-right: 20px;
+  color: #111;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 16px;
+  color: #111;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+@media (max-width: 742px) {
+  .info-container {
+    display: none;
+}
+}

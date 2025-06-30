@@ -1,8 +1,11 @@
 import {
   ChevronRight,
   Facebook,
+  Home,
   Instagram,
   Linkedin,
+  Mail,
+  Phone,
   Twitter,
 } from "lucide-react";
 import styles from "./Footer.module.scss";
@@ -44,10 +47,18 @@ const Footer = () => {
         <div className={styles.section}>
           <div className={styles.sectionTitle}>Contact Us</div>
           <div className={styles.link}>
+            <div>
+              <Home size={15} />
+            </div>
             No: 58 A, East Madison Street Baltimore, MD, USA 4508
           </div>
-          <div className={styles.link}>000 - 123456789</div>
-          <div className={styles.link}>info@example.com</div>
+          <div className={styles.link}>
+            <Phone size={15} /> +1 000 - 123456789
+          </div>
+          <div className={styles.link}>
+            <Mail size={15} />
+            info@example.com
+          </div>
         </div>
 
         <div className={styles.section}>
@@ -115,6 +126,37 @@ const Footer = () => {
           <div className={styles.link}>
             <ChevronRight size={15} />
             <span>Help and FAQs</span>
+          </div>
+        </div>
+      </div>
+      <div className={styles.last}>
+        <ul style={{ display: "flex", listStyle: "none", gap: "10px" }}>
+          <li>Search Terms</li>
+          <li>|</li>
+          <li>Advanced Search</li>
+          <li>|</li>
+          <li>Orders and Returns</li>
+          <li>|</li>
+          <li>Consultant</li>
+          <li>|</li>
+          <li>Help & FAQs</li>
+        </ul>
+      </div>
+      <div className={styles.copyright}>
+        <div className={styles.holder}>
+          <div className={styles.content}>
+            <p>Copyright © 2025 All Rights Reserved</p>
+            <div className={styles.cards}>
+              <div className={styles.card}>
+                <img src="Visacard.png" alt="" />
+              </div>
+              <div className={styles.card}>
+                <img src="Mastercard.png" alt="" />
+              </div>
+              <div className={styles.card}>
+                <img src="Paypalcard.webp" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
